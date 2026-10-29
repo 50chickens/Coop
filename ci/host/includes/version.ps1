@@ -1,5 +1,9 @@
 function Get-CoopVersionList($configuration)
 {
+    if (-not (Test-Path -Path $configuration.releaseRootPath))
+    {
+        return
+    }
     return Get-ChildItem -Path $configuration.releaseRootPath -Directory |
         Where-Object { $_.Name -match '^[0-9]+(\.[0-9]+){0,2}$' } |
         ForEach-Object {

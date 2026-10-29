@@ -64,11 +64,22 @@ function Invoke-PreflightCheck($configuration)
 
 function Get-SelectedStages($configuration)
 {
-    if ($configuration.SelectedStage -eq 'all')
+    if ($configuration.SelectedStage -ne 'all')
     {
-        return $configuration.stages
+        return @($configuration.SelectedStage)
     }
-    return @($configuration.SelectedStage)
+
+    switch (Get-ExecutionEnvironment)
+    {
+        'gha'
+        {
+            return $configuration.ghaStages
+        }
+        default
+        {
+            return $configuration.stages
+        }
+    }
 }
 
 function Invoke-Stage($configuration, [string]$name)
@@ -85,6 +96,8 @@ function Invoke-Stage($configuration, [string]$name)
 $configuration = Get-Configuration
 $configuration = Add-RuntimeConfiguration $configuration
 Invoke-PreflightCheck $configuration
+
+Write-Log "host environment $(Get-ExecutionEnvironment), stages $((Get-SelectedStages $configuration) -join ', ')"
 
 (Get-SelectedStages $configuration) | ForEach-Object {
     Invoke-Stage $configuration $_

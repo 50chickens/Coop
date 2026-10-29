@@ -29,5 +29,6 @@
     "Coop.Services.Surface",
     "Coop.Services.Agent"
   ],
-  "stages": ["packages", "build-test", "verify-packages", "integration-mock", "release", "docker", "deployment-test"]
+  "stages": ["packages", "build-test", "verify-packages", "integration-mock", "release", "docker", "deployment-test"],
+  "ghaStages": ["packages", "build-test", "verify-packages", "integration-mock"]
 }
