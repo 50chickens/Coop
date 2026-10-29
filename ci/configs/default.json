@@ -30,5 +30,5 @@
     "Coop.Services.Agent"
   ],
   "stages": ["packages", "build-test", "verify-packages", "integration-mock", "release", "docker", "deployment-test"],
-  "ghaStages": ["packages", "build-test", "verify-packages", "integration-mock"]
+  "ghaStages": ["build-test", "integration-mock"]
 }
