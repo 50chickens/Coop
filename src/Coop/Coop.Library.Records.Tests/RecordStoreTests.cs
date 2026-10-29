@@ -97,6 +97,7 @@ namespace Coop.Library.Records.Tests
         }
 
         [Test]
+        [Platform("Win")]
         public void Test_That_We_Refuse_An_Execution_Id_That_Cannot_Name_A_Document()
         {
             string root = Root();

@@ -51,6 +51,7 @@ namespace Coop.Library.Common.Tests
         }
 
         [Test]
+        [Platform("Win")]
         public void Test_That_We_Can_RetryAReplaceAfterATransientDenial()
         {
             string source = Path.Combine(folder, "source.txt");

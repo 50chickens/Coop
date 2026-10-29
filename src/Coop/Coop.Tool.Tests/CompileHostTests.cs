@@ -11,6 +11,7 @@ using Coop.Services.Surface;
 namespace Coop.Tool.Tests
 {
     [TestFixture]
+    [Platform("Win")]
     public sealed class CompileHostTests
     {
         [Test]

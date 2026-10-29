@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Coop.Library.Locking.Tests
 {
     [TestFixture]
+    [Platform("Win")]
     public class RunLockTests
     {
         [Test]
