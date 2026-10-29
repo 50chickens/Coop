@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coop.Services.Agent" />
+    <ProjectReference Include="..\Coop.Services.Agent\Coop.Services.Agent.csproj" />
   </ItemGroup>
 
 </Project>

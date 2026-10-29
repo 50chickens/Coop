@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coop.Library.Locking" />
+    <ProjectReference Include="..\Coop.Library.Locking\Coop.Library.Locking.csproj" />
   </ItemGroup>
 
 </Project>

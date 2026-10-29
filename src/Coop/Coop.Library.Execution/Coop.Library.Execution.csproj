@@ -8,7 +8,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coop.Library.Common" />
+    <ProjectReference Include="..\Coop.Library.Common\Coop.Library.Common.csproj" />
   </ItemGroup>
 
 </Project>

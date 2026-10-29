@@ -9,13 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coop.Library.Common" />
-    <PackageReference Include="Coop.Library.Execution" />
-    <PackageReference Include="Coop.Library.Hashing" />
-    <PackageReference Include="Coop.Library.Artefacts" />
-    <PackageReference Include="Coop.Library.Records" />
-    <PackageReference Include="Coop.Library.Template" />
-    <PackageReference Include="Coop.Library.Locking" />
+    <ProjectReference Include="..\Coop.Library.Common\Coop.Library.Common.csproj" />
+    <ProjectReference Include="..\Coop.Library.Execution\Coop.Library.Execution.csproj" />
+    <ProjectReference Include="..\Coop.Library.Hashing\Coop.Library.Hashing.csproj" />
+    <ProjectReference Include="..\Coop.Library.Artefacts\Coop.Library.Artefacts.csproj" />
+    <ProjectReference Include="..\Coop.Library.Records\Coop.Library.Records.csproj" />
+    <ProjectReference Include="..\Coop.Library.Template\Coop.Library.Template.csproj" />
+    <ProjectReference Include="..\Coop.Library.Locking\Coop.Library.Locking.csproj" />
   </ItemGroup>
 
 </Project>

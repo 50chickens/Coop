@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\src\Coop\Coop.Services.Agent\Coop.Services.Agent.csproj" />
+    <ProjectReference Include="..\Coop.Services.Agent\Coop.Services.Agent.csproj" />
   </ItemGroup>
 
 </Project>

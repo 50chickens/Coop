@@ -19,9 +19,8 @@ function Add-RuntimeConfiguration($configuration)
 {
     $repositoryRoot = (Get-Item "$PSScriptRoot\..\..\..").FullName
     $configuration | Add-Member -NotePropertyName 'RepositoryRoot' -NotePropertyValue $repositoryRoot -Force
-    $configuration | Add-Member -NotePropertyName 'MockRoot' -NotePropertyValue "$repositoryRoot\$($configuration.integrationMockRelativePath)" -Force
-    $configuration | Add-Member -NotePropertyName 'MockProjectPath' -NotePropertyValue "$repositoryRoot\$($configuration.integrationMockRelativePath)\$($configuration.integrationMockProjectName)\$($configuration.integrationMockProjectName).csproj" -Force
-    $configuration | Add-Member -NotePropertyName 'MockOutputPath' -NotePropertyValue "$repositoryRoot\$($configuration.integrationMockRelativePath)\output" -Force
+    $configuration | Add-Member -NotePropertyName 'MockProjectPath' -NotePropertyValue "$repositoryRoot\$($configuration.integrationMockProjectRelativePath)\$($configuration.integrationMockProjectName)\$($configuration.integrationMockProjectName).csproj" -Force
+    $configuration | Add-Member -NotePropertyName 'MockOutputPath' -NotePropertyValue "$repositoryRoot\$($configuration.integrationMockOutputRelativePath)\output" -Force
     return $configuration
 }
 

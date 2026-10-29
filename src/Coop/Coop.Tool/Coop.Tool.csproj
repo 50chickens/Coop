@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coop.Services.Surface" />
+    <ProjectReference Include="..\Coop.Services.Surface\Coop.Services.Surface.csproj" />
   </ItemGroup>
 
 </Project>

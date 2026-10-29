@@ -18,8 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Coop.Library.Hashing\Coop.Library.Hashing.csproj" />
-    <PackageReference Include="Coop.Library.Common" />
-    <PackageReference Include="Coop.Library.Execution" />
+    <ProjectReference Include="..\Coop.Library.Common\Coop.Library.Common.csproj" />
+    <ProjectReference Include="..\Coop.Library.Execution\Coop.Library.Execution.csproj" />
   </ItemGroup>
 
 </Project>

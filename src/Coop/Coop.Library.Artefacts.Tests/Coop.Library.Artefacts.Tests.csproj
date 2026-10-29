@@ -18,9 +18,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Coop.Library.Artefacts\Coop.Library.Artefacts.csproj" />
-    <PackageReference Include="Coop.Library.Common" />
-    <PackageReference Include="Coop.Library.Execution" />
-    <PackageReference Include="Coop.Library.Hashing" />
+    <ProjectReference Include="..\Coop.Library.Common\Coop.Library.Common.csproj" />
+    <ProjectReference Include="..\Coop.Library.Execution\Coop.Library.Execution.csproj" />
+    <ProjectReference Include="..\Coop.Library.Hashing\Coop.Library.Hashing.csproj" />
   </ItemGroup>
 
 </Project>
