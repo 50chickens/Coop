@@ -1,6 +1,6 @@
 {
   "environment": "default",
-  "solutionRelativePath": "src/Coop.sln",
+  "solutionRelativePath": "src/Coop/Coop.sln",
   "buildConfiguration": "Release",
   "buildTestBudgetSeconds": 120,
   "packageFeedRelativePath": "nuget_repo",
