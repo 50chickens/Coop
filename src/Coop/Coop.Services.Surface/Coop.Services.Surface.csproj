@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Coop.Library.Common" />
+    <PackageReference Include="Coop.Library.Execution" />
+    <PackageReference Include="Coop.Library.Hashing" />
+    <PackageReference Include="Coop.Library.Artefacts" />
+    <PackageReference Include="Coop.Library.Records" />
+    <PackageReference Include="Coop.Library.Template" />
+    <PackageReference Include="Coop.Library.Locking" />
+  </ItemGroup>
+
+</Project>

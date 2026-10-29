@@ -1,0 +1,33 @@
+{
+  "environment": "default",
+  "solutionRelativePath": "src/Coop.sln",
+  "buildConfiguration": "Release",
+  "buildTestBudgetSeconds": 120,
+  "packageFeedRelativePath": "nuget_repo",
+  "releaseRootPath": "C:\\git\\rea\\int\\release\\Coop",
+  "cachedAssetsRelativePath": "ci/host/cached_assets",
+  "dockerRelativePath": "ci/host/docker",
+  "integrationMockRelativePath": "ci/host/integration-mock",
+  "integrationMockProjectName": "Coop.Demo.AgentTurn",
+  "dockerImageName": "coop-surface",
+  "serverProjectRelativePath": "src/Coop/Coop.Services.Surface/Coop.Services.Surface.csproj",
+  "toolProjectRelativePath": "src/Coop/Coop.Tool/Coop.Tool.csproj",
+  "packOrder": [
+    "Coop.Library.Common",
+    "Coop.Library.Execution",
+    "Coop.Library.Hashing",
+    "Coop.Library.Locking",
+    "Coop.Library.Packages",
+    "Coop.Library.Template",
+    "Coop.Library.Artefacts",
+    "Coop.Library.Records",
+    "Coop.Services.Plan",
+    "Coop.Services.Gate",
+    "Coop.Services.Watch",
+    "Coop.Services.Pipeline",
+    "Coop.Services.IssueWorkflow",
+    "Coop.Services.Surface",
+    "Coop.Services.Agent"
+  ],
+  "stages": ["packages", "build-test", "verify-packages", "integration-mock", "release", "docker", "deployment-test"]
+}

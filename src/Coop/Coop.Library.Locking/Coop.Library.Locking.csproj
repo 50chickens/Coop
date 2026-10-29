@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Coop.Library.Common" />
+    <PackageReference Include="Coop.Library.Execution" />
+  </ItemGroup>
+
+</Project>
